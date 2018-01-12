@@ -14,6 +14,8 @@ Dépendances du projet
 Wordpress > 4.0
 Normalize > 7.0
 Fontawesome
+Custom Advanced Fields
+Regenerate Thumbnails
 ```
 
 
