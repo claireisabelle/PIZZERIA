@@ -20,7 +20,7 @@
 		</div>
 		<!-- /.main-content -->
 
-		<div class="box-information container clear">
+		<div class="box-information container">
 			<div class="single-box">
 				
 				<?php 

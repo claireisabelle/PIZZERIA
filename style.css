@@ -53,6 +53,10 @@ h4{
 	font-size: 24px;
 }
 
+img{
+	max-width: 100%;
+}
+
 .clear,
 .clear::after{
 	content: '';
@@ -332,4 +336,87 @@ nav.site-nav ul li.current_page_item a{
 .content-text p{
 	font-size: 18px;
 	line-height: 50px;
+}
+
+/*
+ ************************************************
+ * BOXES (ABOUT US PAGE)
+ ************************************************
+ */
+
+.box-information{
+	display: grid;
+}
+
+@media only screen and (min-width: 768px){
+	.box-information{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.single-box{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	color: #ffffff;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+	.single-box{
+		grid-template-columns: unset;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+.single-box:nth-child(1){
+	background-color: #f19f30;
+}
+
+.single-box:nth-child(2){
+	background-color: #127427;
+}
+
+.single-box:nth-child(3){
+	background-color: #a61206;
+}
+
+@media only screen and (min-width: 768px){
+	.single-box:nth-child(2) img{
+		order: 2;
+	}
+
+	.single-box:nth-child(2) div{
+		order: 1;
+	}
+}
+
+.content-box{
+	display: grid;
+	grid-template-rows: 10% 20% 60% 10%;
+	grid-template-areas: "."
+						 "top"
+						 "text"
+						 ".";
+}
+
+.content-box *{
+	align-self: center;
+}
+
+@media only screen and (min-width: 768px){
+	.content-box{
+		grid-template-rows: 20% 30% 30% 20%;
+	}
+}
+
+.content-box h3{
+	grid-area: top;
+	margin: 5px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.content-box p{
+	grid-area: text;
 }
