@@ -239,7 +239,8 @@ nav.site-nav ul li a{
 	font-family: 'Raleway', sans-serif;
 }
 
-nav.site-nav ul li.current_page_item a{
+nav.site-nav ul li.current_page_item a,
+.single-specialties nav.site-nav ul li.menu-item-27 a{
 	border-bottom: 8px solid #a61206;
 }
 
@@ -555,3 +556,22 @@ footer p.copyright{
 	color: #3d3d3d;
 	line-height: 30px;
 }
+
+/*
+ ************************************************
+ * SINGLE SPECIALTY TEMPLATE
+ ************************************************
+ */
+
+.single-specialties p.ingredients,
+.single-specialties p.price{
+	color: #a61206;
+	font-size: 30px;
+	margin: 0;
+}
+
+.single-specialties p.price span{
+	color: #000000;
+}
+
+
