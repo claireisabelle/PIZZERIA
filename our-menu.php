@@ -33,7 +33,7 @@
 		
 		<h3 class="primary-text">Pizzas</h3>
 		
-		<div class="container-grid">
+		<div class="container-grid specialty-content">
 			<?php
 				$args = array(
 					'post_type' 	 => 'specialties',
@@ -63,7 +63,7 @@
 
 		<h3 class="primary-text">Autres</h3>
 		
-		<div class="container-grid">
+		<div class="container-grid specialty-content">
 			<?php
 				$args = array(
 					'post_type' 	 => 'specialties',
