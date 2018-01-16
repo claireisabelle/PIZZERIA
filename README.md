@@ -16,6 +16,7 @@ Normalize > 7.0
 Fontawesome
 Custom Advanced Fields
 Regenerate Thumbnails
+Fluidbox
 ```
 
 
