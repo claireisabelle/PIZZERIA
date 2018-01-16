@@ -83,6 +83,29 @@ img{
 	color: #a61206;
 }
 
+.button{
+	background-color: #a61206;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	width: auto;
+	border-radius: 8px;
+	color: #ffffff;
+	padding: 15px 80px;
+	margin-top: 20px;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.primary{
+	background-color: #a61206;
+	transition: background-color 0.5s ease;
+}
+
+.primary:hover{
+	background-color: #7b0d04;
+}
+
 /*
  ************************************************
  * HEADER
@@ -574,4 +597,67 @@ footer p.copyright{
 	color: #000000;
 }
 
+/*
+ ************************************************
+ * BLOG
+ ************************************************
+ */
 
+article.entry{
+	margin-top: 30px;
+}
+
+header.entry-header{
+	margin-top: 20px;
+}
+
+header.entry-header .date{
+	background-color: #f19f30;
+	float: left;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	padding-top: 5px;
+	margin-right: 20px;
+}
+
+header.entry-header .date time{
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+header.entry-header .date time span{
+	font-size: 16px;
+	display: block;
+	text-transform: uppercase;
+}
+
+header.entry-header .entry-title{
+	float: right;
+	width: calc(100% - 90px);
+}
+
+header.entry-header h2{
+	margin: 0;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+header.entry-header p.author{
+	margin: 0;
+	text-transform: uppercase;
+	color: #000000;
+	font-family: 'Raleway', sans-serif;
+}
+
+p.author i{
+	font-size: 30px; 
+	color: #f19f30;
+}
+
+div.entry-content p{
+	margin-bottom: 0;
+	line-height: 24px;
+}
