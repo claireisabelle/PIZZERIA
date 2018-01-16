@@ -865,3 +865,65 @@ li.comment ul.children li{
 #gallery-1 img{
 	border: none!important;
 }
+
+/*
+ ************************************************
+ * RESERVATION FORM
+ ************************************************
+ */
+
+.reservation{
+	background-image: url(img/bg_contact.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+
+}
+
+@media only screen and (min-width: 768px){
+	.reservation-info{
+		margin-left: 50%;
+	}
+}
+
+form.reservation-form h2{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+form.reservation-form .field{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+form.reservation-form .field input,
+form.reservation-form .field textarea{
+	width: 100%;
+	border: solid 3px #000000;
+	padding: 15px 10px;
+}
+
+form.reservation-form .field textarea{
+	height: 200px;
+}
+
+form.reservation-form ::-webkit-input-placeholder{
+	color: #000000!important;
+}
+
+form.reservation-form :moz-placeholder{
+	color: #000000!important;
+}
+
+form.reservation-form ::moz-placeholder{
+	color: #000000!important;
+}
+
+form.reservation-form ::-ms-input-placeholder{
+	color: #000000!important;
+}
+
+form.reservation-form input[type="submit"]{
+	border: none;
+}
+
+
