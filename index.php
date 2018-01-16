@@ -62,7 +62,7 @@
 			</main>
 
 			<?php get_sidebar(); ?>
-			
+
 		</div>
 		<!-- /.container-grid -->
 	</div>

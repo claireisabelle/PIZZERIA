@@ -264,7 +264,8 @@ nav.site-nav ul li a{
 }
 
 nav.site-nav ul li.current_page_item a,
-.single-specialties nav.site-nav ul li.menu-item-27 a{
+.single-specialties nav.site-nav ul li.menu-item-27 a,
+nav.site-nav ul li.current_page_parent a{
 	border-bottom: 8px solid #a61206;
 }
 
@@ -612,7 +613,8 @@ header.entry-header{
 	margin-top: 20px;
 }
 
-header.entry-header .date{
+header.entry-header .date,
+.entry-information .date{
 	background-color: #f19f30;
 	float: left;
 	width: 70px;
@@ -622,13 +624,15 @@ header.entry-header .date{
 	margin-right: 20px;
 }
 
-header.entry-header .date time{
+header.entry-header .date time,
+.entry-information .date time{
 	font-size: 30px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 }
 
-header.entry-header .date time span{
+header.entry-header .date time span,
+.entry-information .date time span{
 	font-size: 16px;
 	display: block;
 	text-transform: uppercase;
@@ -646,11 +650,22 @@ header.entry-header h2{
 	font-weight: 700;
 }
 
-header.entry-header p.author{
+header.entry-header p.author,
+.entry-information p.author{
 	margin: 0;
 	text-transform: uppercase;
 	color: #000000;
 	font-family: 'Raleway', sans-serif;
+}
+
+.entry-information{
+	padding-top: 30px;
+}
+
+.entry-information p.author{
+	display: inline;
+	float: left;
+	margin-top: 40px;
 }
 
 p.author i{
@@ -722,4 +737,109 @@ form.searchform #s{
 
 .sidebar .widget ul li a:hover{
 	color: #f19f30;
+}
+
+/*
+ ************************************************
+ * COMMENTS
+ ************************************************
+ */
+
+.comment-respond h3{
+	font-weight: 700;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+	div.comments{
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	div.comments{
+		width: 60%;
+	}
+}
+
+.comment-respond form label{
+	width: 200px;
+	display: inline-block;
+	text-align: right;
+	padding-right: 20px;
+	font-weight: bold;
+}
+
+.comment-respond form input,
+.comment-respond form textarea{
+	padding: 10px;
+	width: calc(100% - 220px);
+	font-size: 18px;
+}
+
+.comment-respond form input.submit{
+	margin: 0 auto;
+	display: inline-block;
+	border: none;
+	width: auto;
+	background-color: #a61206;
+	font-size: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+p.form-submit{
+	text-align: center;
+}
+
+.comment-notes{
+	text-align: center;
+}
+
+p.logged-in-as a{
+	color: #a61206;
+	text-align: center;
+	display: block;
+}
+
+/*
+ ************************************************
+ * COMMENTS LIST
+ ************************************************
+ */
+
+ol.commentlist{
+	list-style: none;
+}
+
+ol.commentlist li.comment{
+	background-color: #e1e1e1;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+ol.commentlist li.comment cite{
+	color: #a61206;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+li.comment .comment-author{
+	margin-bottom: 10px;
+}
+
+li.comment a{
+	color: #a61206;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+li.comment ul.children{
+	list-style: none;
+}
+
+li.comment ul.children li{
+	background-color: #ffffff;
+	margin-top: 20px;
 }

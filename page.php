@@ -19,11 +19,6 @@
 			</main>
 		</div>
 		<!-- /.main-content -->
-
-		
-
-		
-
 		
 
 	<?php endwhile; ?>
