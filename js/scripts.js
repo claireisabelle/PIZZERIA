@@ -1,10 +1,22 @@
 var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
+function initMap() {
+
+	var latLng = {
+		lat: 49.131539,
+		lng: -0.479913
+	};
+
+	map = new google.maps.Map(document.getElementById('map'), {
+	  center: latLng,
+	  zoom: 17
+	});
+
+	var marker = new google.maps.Marker({
+		position: latLng,
+		map: map,
+		title: 'La Pizzeria'
+	});
+}
 
 
 $ = jQuery.noConflict();
@@ -35,4 +47,37 @@ $(document).ready(function() {
 		jQuery('[data-fluidbox]').fluidbox();
 	}
 
+
+	// ADAPT GOOGLE MAP TO HEIGHT
+	var map = $('#map');
+	if(map.length > 0){
+		if($(document).width() >= breakpoint){
+			displayMap(0);
+		} else {
+			displayMap(300);
+		}
+	}
+	$(window).resize(function(){
+		if($(document).width() >= breakpoint){
+			displayMap(0);
+		} else {
+			displayMap(300);
+		}
+	});
+
 });
+
+
+function displayMap(value) {
+	if(value == 0){
+		
+		var locationSection = $('.location-reservation');
+		var locationHeight = locationSection.height();
+		$('#map').css({'height': locationHeight });
+
+	} else {
+
+		$('#map').css({'height': value });
+
+	}
+}

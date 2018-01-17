@@ -1095,13 +1095,18 @@ section.location-reservation{
 	background-position: center center;
 	background-size: cover;
 	margin-top: 50px;
-	padding: 50px 0;
+}
+
+@media only screen and (min-width: 768px){
+	section.location-reservation [class*='columns']{
+		padding: 0 10px 0px 10px !important;
+	}
 }
 
 .home .reservation-info{
 	margin: 0px;
 	color: #ffffff;
-	padding-right: 30px;
+	padding: 50px;
 }
 
 .home .reservation-form h2{
