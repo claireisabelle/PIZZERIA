@@ -1041,6 +1041,9 @@ form.reservation-form input[type="submit"]{
 
 section.ingredients{
 	background-image: url(img/bg_ingredients.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 	margin-top: 50px;
 	padding: 80px 0;
 	color: #ffffff;
@@ -1078,3 +1081,61 @@ section.ingredients .image{
 section.ingredients .image img{
 	width: 80%;
 }
+
+
+/*
+ ************************************************
+ * SECTION MAP - RESERVATION FRONT PAGE
+ ************************************************
+ */
+
+section.location-reservation{
+	background-image: url(img/bg_ingredients.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 50px;
+	padding: 50px 0;
+}
+
+.home .reservation-info{
+	margin: 0px;
+	color: #ffffff;
+	padding-right: 30px;
+}
+
+.home .reservation-form h2{
+	text-align: center;
+	font-size: 34px;
+	margin: 0 0 20px 0;
+	font-weight: 900;
+}
+
+.home .reservation-form input,
+.home .reservation-form textarea{
+	background-color: transparent;
+	border-color: #ffffff!important;
+	color: #ffffff!important;
+}
+
+.home .reservation-form input[type='submit']{
+	background-color: #a61206;
+	border: none!important;
+}
+
+.home form.reservation-form ::-webkit-input-placeholder{
+	color: #ffffff!important;
+}
+
+.home form.reservation-form :moz-placeholder{
+	color: #ffffff!important;
+}
+
+.home form.reservation-form ::moz-placeholder{
+	color: #ffffff!important;
+}
+
+.home form.reservation-form ::-ms-input-placeholder{
+	color: #ffffff!important;
+}
+

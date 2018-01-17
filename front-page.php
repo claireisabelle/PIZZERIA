@@ -95,6 +95,24 @@
 			?>
 			
 		</section>
+
+		<section class="location-reservation container clear">
+			<div class="container-grid">
+				<div class="columns2-4">
+					<div id="map">
+						map here
+					</div>
+					<!-- /#map -->
+				</div>
+				<!-- /.columns2-4 -->
+
+				<div class="columns2-4">
+					<?php get_template_part('templates/reservation', 'form'); ?>
+				</div>
+				<!-- /.columns2-4 -->
+			</div>
+			<!-- /.container-grid -->
+		</section>
 		
 
 	
