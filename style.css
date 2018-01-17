@@ -1032,3 +1032,49 @@ form.reservation-form input[type="submit"]{
 		width: 100%;
 	}
 }
+
+/*
+ ************************************************
+ * SECTION INGREDIENTS
+ ************************************************
+ */
+
+section.ingredients{
+	background-image: url(img/bg_ingredients.jpg);
+	margin-top: 50px;
+	padding: 80px 0;
+	color: #ffffff;
+}
+
+section.ingredients h3{
+	line-height: 60px;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+section.ingredients p{
+	line-height: 50px;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 767px){
+	section.ingredients p,
+	section.ingredients h3{
+		text-align: center;
+	}
+
+	section.ingredients a{
+		margin: 0 auto;
+		display: block;
+		width: 250px;
+	}
+}
+
+section.ingredients .image{
+	padding-top: 30px;
+	text-align: center;
+}
+
+section.ingredients .image img{
+	width: 80%;
+}
