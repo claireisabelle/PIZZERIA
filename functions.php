@@ -6,8 +6,14 @@
  ***********************************************
  */
 
+// SQL Structure
 require get_template_directory() . '/inc/database.php';
+
+// Submission to the database (reservation form)
 require get_template_directory() . '/inc/reservations.php';
+
+// Option Pages for the administration theme
+require get_template_directory() . '/inc/options.php';
 
 
 /*
