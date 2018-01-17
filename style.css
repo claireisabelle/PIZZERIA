@@ -1085,7 +1085,7 @@ section.ingredients .image img{
 
 /*
  ************************************************
- * SECTION MAP - RESERVATION FRONT PAGE
+ * SECTION RESERVATION FRONT PAGE
  ************************************************
  */
 
@@ -1139,3 +1139,12 @@ section.location-reservation{
 	color: #ffffff!important;
 }
 
+/*
+ ************************************************
+ * SECTION GOOGLE MAP
+ ************************************************
+ */
+
+#map{
+	height: 400px;
+}
