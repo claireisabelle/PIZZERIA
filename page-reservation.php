@@ -26,7 +26,7 @@
 
 				<div class="reservation-info">				
 
-					<form action="post" class="reservation-form">
+					<form method="post" class="reservation-form">
 						<h2>Faire une réservation</h2>
 						<div class="field">
 							<input type="text" name="name" placeholder="Nom" required>
@@ -53,7 +53,7 @@
 						</div>
 						<!-- /.field -->
 
-						<input type="submit" name="submit" class="button" value="Envoyer">
+						<input type="submit" name="reservation-send" class="button" value="Envoyer">
 
 						<input type="hidden" name="hidden" value="1">
 

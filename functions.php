@@ -2,6 +2,16 @@
 
 /*
  ***********************************************
+ * IMPORT THE INC FILES
+ ***********************************************
+ */
+
+require get_template_directory() . '/inc/database.php';
+require get_template_directory() . '/inc/reservations.php';
+
+
+/*
+ ***********************************************
  * SET UP THEME
  ***********************************************
  */
