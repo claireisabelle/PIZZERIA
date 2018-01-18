@@ -9,10 +9,52 @@ function lapizzeria_options(){
 }
 add_action('admin_menu', 'lapizzeria_options');
 
-
-function lapizzeria_adjustments(){
-	echo "Hello from lapizzeria_adjustments";
+function lapizzeria_settings(){
+	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_latitude');
+	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_longitude');
+	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_zoom');
+	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_apikey');
 }
+add_action('init', 'lapizzeria_settings');
+
+
+function lapizzeria_adjustments(){ ?>
+	<div class="wrap">
+		<h1>Options la pizzeria</h1>
+	
+		<form action="options.php" method="post">
+			<?php
+				settings_fields('lapizzeria_options_gmaps');
+				do_settings_sections('lapizzeria_options_gmaps');
+			?>
+			<h2>Google Maps</h2>
+			<table class="form-table">
+				<tr valign="top">
+					<th scope="row">Latitude : </th>
+					<td><input type="text" name="lapizzeria_gmap_latitude" value="<?php echo esc_attr(get_option('lapizzeria_gmap_latitude')); ?>"></td>
+				</tr>
+				
+				<tr valign="top">
+					<th scope="row">Longitude : </th>
+					<td><input type="text" name="lapizzeria_gmap_longitude" value="<?php echo esc_attr(get_option('lapizzeria_gmap_longitude')); ?>"></td>
+				</tr>
+
+				<tr valign="top">
+					<th scope="row">Zoom Level : </th>
+					<td><input type="number" min="10" max="21" name="lapizzeria_gmap_zoom" value="<?php echo esc_attr(get_option('lapizzeria_gmap_zoom')); ?>"></td>
+				</tr>
+
+				<tr valign="top">
+					<th scope="row">API Key : </th>
+					<td><input type="text" name="lapizzeria_gmap_apikey" value="<?php echo esc_attr(get_option('lapizzeria_gmap_apikey')); ?>"></td>
+				</tr>
+
+			</table>
+			<?php submit_button(); ?>
+		</form>
+
+	</div>
+<?php }
 
 function lapizzeria_reservations(){ ?>
 	<div class="wrap">
