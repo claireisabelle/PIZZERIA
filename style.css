@@ -902,6 +902,7 @@ form.reservation-form h2{
 form.reservation-form .field{
 	margin-bottom: 20px;
 	width: 100%;
+	position: relative;
 }
 
 form.reservation-form .field input,
@@ -1152,4 +1153,51 @@ section.location-reservation{
 
 #map{
 	height: 400px;
+}
+
+/*
+ ************************************************
+ * CHAMP DATETIME POLYFILL
+ ************************************************
+ */
+
+button.datetime-local-datepicker-button{
+	background-color: #a61206;
+	border: none;
+	width: 100%;
+	padding: 10px 0;
+	color: white;
+}
+
+table.ui-datepicker-calendar{
+	width: 100%;
+}
+
+.datetime-local-calendar-dialog.datetime-local-open{
+	background-color: #e1e1e1;
+	padding: 20px;
+	width: 280px;
+	color: #000000;
+}
+
+.datetime-local-calendar-dialog.datetime-local-open a{
+	color: #a61206;
+}
+
+.ui-datepicker-next{
+	float: right;
+}
+
+.ui-datepicker-header{
+	font-weight: bold;
+}
+
+.ui-corner-all{
+	cursor: pointer;
+}
+
+div.datetime-local-spin-btn-container{
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }

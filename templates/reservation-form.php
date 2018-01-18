@@ -8,7 +8,7 @@
 		<!-- /.field -->
 
 		<div class="field">
-			<input type="datetime-local" name="date" placeholder="Date" required>
+			<input type="datetime-local" name="date" placeholder="Date" step="300" required>
 		</div>
 		<!-- /.field -->
 
