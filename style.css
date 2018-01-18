@@ -278,6 +278,33 @@ nav.site-nav ul li.current_page_parent a{
 	border-bottom: 8px solid #a61206;
 }
 
+/* Menu drop  */
+
+@media only screen and (min-width: 992px){
+	nav.site-nav ul li.menu-item-has-children{
+		position: relative;
+	}
+
+	nav.site-nav ul li.menu-item-has-children ul.sub-menu{
+		display: none;
+	}
+
+	nav.site-nav ul li.menu-item-has-children:hover ul.sub-menu{
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		background-color: #ffffff;
+	}
+
+	nav.site-nav ul li.menu-item-has-children:hover ul.sub-menu li{
+		display: block;
+		padding-left: 30px;
+	}
+}
+
+
 /*
  ************************************************
  * RESPONSIVE MENU BUTTON

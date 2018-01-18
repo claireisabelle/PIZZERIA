@@ -15,7 +15,7 @@
 	<meta name="application-name" content="La Pizzeria Restaurant">
 	<link rel="icon" type="image" href="<?php echo get_template_directory_uri(); ?>/icon.png" sizes="192x192">
 
-	<title>La Pizzeria</title>
+	
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
