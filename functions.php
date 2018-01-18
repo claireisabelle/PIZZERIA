@@ -31,6 +31,7 @@ function lapizzeria_setup(){
 
 	update_option('thumbnail_size_w', 253);
 	update_option('thumbnail_size_h', 164);
+
 }
 add_action('after_setup_theme', 'lapizzeria_setup');
 
@@ -101,6 +102,22 @@ function lapizzeria_menus(){
 	));
 }
 add_action('init', 'lapizzeria_menus');
+
+
+/*
+ ***********************************************
+ * CUSTOM LOGO
+ ***********************************************
+ */
+
+function lapizzeria_custom_logo(){
+	$logo = array(
+		'width'  => 250,
+		'height' => 200
+	);
+	add_theme_support('custom-logo', $logo);
+}
+add_action('after_setup_theme', 'lapizzeria_custom_logo');
 
 
 /*
