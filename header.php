@@ -3,6 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- Make this iOS compatible -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="La Pizzeria Restaurant">
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.jpg">
+
+	<!-- Make this Android compatible -->
+	<meta name="theme-color" content="#a61206">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="La Pizzeria Restaurant">
+	<link rel="icon" type="image" href="<?php echo get_template_directory_uri(); ?>/icon.png" sizes="192x192">
+
 	<title>La Pizzeria</title>
 	<?php wp_head(); ?>
 </head>
