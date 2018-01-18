@@ -93,6 +93,18 @@ add_action('wp_enqueue_scripts', 'lapizzeria_styles');
 
 /*
  ***********************************************
+ * ADMINISTRATION CSS AND JS SCRIPTS
+ ***********************************************
+ */
+
+function lapizzeria_admin_scripts(){
+	wp_enqueue_script('adminjs', get_template_directory_uri().'/js/admin_ajax.js', array('jquery'), '1.0.0', true);
+}
+add_action('admin_enqueue_scripts', 'lapizzeria_admin_scripts');
+
+
+/*
+ ***********************************************
  * MENUS
  ***********************************************
  */
