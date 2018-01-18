@@ -10,10 +10,17 @@ function lapizzeria_options(){
 add_action('admin_menu', 'lapizzeria_options');
 
 function lapizzeria_settings(){
+
+	// Google Maps Group Options
 	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_latitude');
 	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_longitude');
 	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_zoom');
 	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_apikey');
+
+	// Informations coordonnées Group Options
+	register_setting('lapizzeria_options_info', 'lapizzeria_info_location');
+	register_setting('lapizzeria_options_info', 'lapizzeria_info_phonenumber');
+
 }
 add_action('init', 'lapizzeria_settings');
 
@@ -23,6 +30,8 @@ function lapizzeria_adjustments(){ ?>
 		<h1>Options la pizzeria</h1>
 	
 		<form action="options.php" method="post">
+
+			<!-- GOOGLE MAP OPTIONS -->
 			<?php
 				settings_fields('lapizzeria_options_gmaps');
 				do_settings_sections('lapizzeria_options_gmaps');
@@ -48,8 +57,27 @@ function lapizzeria_adjustments(){ ?>
 					<th scope="row">API Key : </th>
 					<td><input type="text" name="lapizzeria_gmap_apikey" value="<?php echo esc_attr(get_option('lapizzeria_gmap_apikey')); ?>"></td>
 				</tr>
-
 			</table>
+
+			<!-- INFORMATIONS COORDONNEES OPTIONS -->
+			<?php
+				settings_fields('lapizzeria_options_info');
+				do_settings_sections('lapizzeria_options_info');
+			?>
+			<h2>Coordonnées</h2>
+			<table class="form-table">
+				<tr valign="top">
+					<th scope="row">Adresse : </th>
+					<td><input type="text" name="lapizzeria_info_location" value="<?php echo esc_attr(get_option('lapizzeria_info_location')); ?>"></td>
+				</tr>
+
+				<tr valign="top">
+					<th scope="row">Téléphone : </th>
+					<td><input type="text" name="lapizzeria_info_phonenumber" value="<?php echo esc_attr(get_option('lapizzeria_info_phonenumber')); ?>"></td>
+				</tr>
+			</table>
+
+
 			<?php submit_button(); ?>
 		</form>
 

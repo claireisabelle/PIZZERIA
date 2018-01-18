@@ -33,8 +33,8 @@
 			</div>
 			<!-- /.socials -->
 			<div class="address">
-				<p>1, chemin du Mont 14210 Baron sur Odon</p>
-				<p>Phone Number: +33(6) 86 45 98 17</p>
+				<p><?php echo esc_html(get_option('lapizzeria_info_location')); ?></p>
+				<p>Phone Number: <?php echo esc_html(get_option('lapizzeria_info_phonenumber')); ?></p>
 			</div>
 			<!-- /.adress -->
 		</div>
