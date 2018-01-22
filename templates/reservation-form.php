@@ -27,6 +27,8 @@
 		</div>
 		<!-- /.field -->
 
+		<!-- <div class="g-recaptcha" data-sitekey="6Lc2-UEUAAAAAMP4ZbPOxYJke2dsnaU9G-ucp88a"></div>-->
+
 		<input type="submit" name="reservation-send" class="button" value="Envoyer">
 
 		<input type="hidden" name="hidden" value="1">

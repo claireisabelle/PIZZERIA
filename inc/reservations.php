@@ -33,10 +33,12 @@ add_action('wp_ajax_lapizzeria_delete_reservation', 'lapizzeria_delete_reservati
 
 function lapizzeria_save_reservation(){
 
-	global $wpdb;
+	
 
 	if(isset($_POST['reservation-send']) && $_POST['hidden'] == "1"){
 
+		global $wpdb;
+		
 		$name = sanitize_text_field($_POST['name']); 
 		$date = sanitize_text_field($_POST['date']);
 		$email = sanitize_email($_POST['email']);
