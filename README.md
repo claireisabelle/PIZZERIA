@@ -18,6 +18,7 @@ Custom Advanced Fields
 Regenerate Thumbnails
 Fluidbox
 Datetime Local Polyfill (+ jQuery, jQuery UI, Moderniz)
+SweetAlert2
 ```
 
 

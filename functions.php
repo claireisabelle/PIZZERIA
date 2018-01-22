@@ -98,7 +98,20 @@ add_action('wp_enqueue_scripts', 'lapizzeria_styles');
  */
 
 function lapizzeria_admin_scripts(){
+	
+	// Sweet Alert 2
+	wp_enqueue_style('sweetalert', get_template_directory_uri().'/css/sweetalert2.min.css');
+	wp_enqueue_script('sweetalertjs', get_template_directory_uri().'/js/sweetalert2.min.js', array('jquery'), '1.0.0', true);
+
 	wp_enqueue_script('adminjs', get_template_directory_uri().'/js/admin_ajax.js', array('jquery'), '1.0.0', true);
+
+	wp_localize_script(
+		'adminjs',
+		'admin_ajax',
+		array(
+			'ajaxurl' => admin_url('admin-ajax.php')
+		)
+	);
 }
 add_action('admin_enqueue_scripts', 'lapizzeria_admin_scripts');
 
